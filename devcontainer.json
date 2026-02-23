@@ -1,0 +1,16 @@
+{
+  "name": "HRMS Java Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/maven:1": {},
+    "ghcr.io/devcontainers/features/postgres:1": {
+      "version": "15"
+    }
+  },
+  "containerEnv": {
+    "POSTGRES_USER": "postgres",
+    "POSTGRES_PASSWORD": "postgres",
+    "POSTGRES_DB": "hrms"
+  },
+  "forwardPorts": [8080, 5432]
+}
